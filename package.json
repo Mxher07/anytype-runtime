@@ -12,6 +12,14 @@
     "README.md",
     "README_EN.md"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mxher07/anytype-runtime.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mxher07/anytype-runtime/issues"
+  },
+  "homepage": "https://github.com/Mxher07/anytype-runtime#readme",
   "scripts": {
     "build": "rollup -c",
     "build:prod": "rollup -c --environment NODE_ENV:production",
@@ -21,7 +29,10 @@
     "types",
     "runtime",
     "inference",
-    "javascript"
+    "javascript",
+    "anytype",
+    "type-inference",
+    "automatic-conversion"
   ],
   "author": "Mxher07",
   "license": "MIT",
