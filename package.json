@@ -1,7 +1,7 @@
 {
   "name": "anytype-runtime",
-  "version": "0.1.3",
-  "description": "A high-performance JavaScript runtime type inference and automatic conversion library",
+  "version": "0.1.4",
+  "description": "A JavaScript runtime type inference and automatic conversion library",
   "main": "dist/anytype.cjs.js",
   "module": "dist/anytype.esm.js",
   "exports": {
