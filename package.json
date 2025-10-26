@@ -1,6 +1,6 @@
 {
   "name": "anytype-runtime",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "A high-performance JavaScript runtime type inference and automatic conversion library",
   "main": "dist/anytype.cjs.js",
