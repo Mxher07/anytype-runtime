@@ -12,11 +12,13 @@ export default {
     },
     {
       file: 'dist/anytype.cjs.js',
-      format: 'cjs'
+      format: 'cjs',
+      exports: 'named'
     },
     {
       file: 'dist/anytype.umd.js',
       format: 'umd',
+      exports: 'named',
       name: 'AnyTypeRuntime'
     }
   ],
