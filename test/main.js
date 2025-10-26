@@ -1,4 +1,4 @@
-import pkg from 'anytype-runtime';
+import pkg from '../dist/anytype.cjs.js';
 const { AnyType, any, declareAny } = pkg;
 
 console.log('=== AnyType 全面性能测试 ===');
