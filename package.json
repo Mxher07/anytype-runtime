@@ -1,0 +1,85 @@
+{
+  "name": "anytype-runtime",
+  "version": "0.1.0",
+  "description": "A high-performance JavaScript runtime type inference and automatic conversion library",
+  "main": "dist/anytype.cjs.js",
+  "module": "dist/anytype.esm.js",
+  "browser": "dist/anytype.umd.js",
+  "unpkg": "dist/anytype.umd.js",
+  "jsdelivr": "dist/anytype.umd.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/anytype.esm.js",
+      "require": "./dist/anytype.cjs.js",
+      "default": "./dist/anytype.umd.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "README_EN.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "build:watch": "rollup -c -w",
+    "build:prod": "npm run lint && npm run test && rollup -c --environment NODE_ENV:production",
+    "dev": "npm run build:watch",
+    "test": "node --test test/*.test.js",
+    "test:watch": "node --test --watch test/*.test.js",
+    "test:coverage": "c8 node --test test/*.test.js",
+    "benchmark": "node benchmarks/index.js",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix",
+    "prepublishOnly": "npm run build:prod",
+    "prepack": "npm run build:prod",
+    "version": "npm run build:prod && git add .",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "types",
+    "runtime",
+    "inference",
+    "conversion",
+    "javascript",
+    "type-checking",
+    "validation",
+    "dynamic-typing",
+    "automatic",
+    "conversion",
+    "anytype",
+    "type-system"
+  ],
+  "author": {
+    "name": "Mxher07",
+    "email": "2360881635@qq.com",
+    "url": "https://github.com/Mxher07"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mxher07/anytype-runtime.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mxher07/anytype-runtime/issues"
+  },
+  "homepage": "https://github.com/Mxher07/anytype-runtime#readme",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-terser": "^0.4.0",
+    "rollup": "^3.0.0",
+    "eslint": "^8.0.0",
+    "c8": "^8.0.0"
+  }
+}
