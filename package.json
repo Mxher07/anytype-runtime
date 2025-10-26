@@ -1,6 +1,6 @@
 {
   "name": "anytype-runtime",
-  "version": "0.1.5",
+  "version": "1.0.0",
   "description": "A JavaScript runtime type inference and automatic conversion library",
   "main": "dist/anytype.cjs.js",
   "module": "dist/anytype.esm.js",
@@ -42,6 +42,7 @@
   "author": "Mxher07",
   "license": "MIT",
   "devDependencies": {
+    "@rollup/plugin-alias": "^5.1.1",
     "@rollup/plugin-commonjs": "^25.0.0",
     "@rollup/plugin-node-resolve": "^15.0.0",
     "rollup": "^3.0.0"
