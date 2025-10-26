@@ -130,7 +130,7 @@ export { AnyType };
 
 // Default Export
 export default {
-  AnyType$1,
-  any$1,
-  declareAny$1
+  AnyType,
+  any,
+  declareAny
 };
