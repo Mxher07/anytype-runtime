@@ -1,10 +1,15 @@
 {
   "name": "anytype-runtime",
-  "version": "0.1.1",
-  "type": "module",
-  "description": "A high-performance JavaScript runtime type inference and automatic conversion library",
+  "version": "0.1.2",
+  "description": "A JavaScript runtime type inference and automatic conversion library",
   "main": "dist/anytype.cjs.js",
   "module": "dist/anytype.esm.js",
+  "exports": {
+    ".": {
+      "import": "./dist/anytype.esm.js",
+      "require": "./dist/anytype.cjs.js"
+    }
+  },
   "browser": "dist/anytype.umd.js",
   "unpkg": "dist/anytype.umd.js",
   "files": [
