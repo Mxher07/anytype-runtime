@@ -51,18 +51,20 @@ npm run build
 
 **In Node.js / ES Modules:**
 ```javascript
-import { any, declareAny } from 'anytype-runtime';
-
-// Or if you installed the repository manually:
-import { any, declareAny } from './path/to/anytype-runtime/dist/anytype.esm.js';
+import pkg from 'anytype-runtime';
+const { AnyType, any, declareAny } = pkg;
+// Or if you installed the repository manually
+import pkg from 'path/to/dist/anytype.esm.js';
+const { AnyType, any, declareAny } = pkg;
 ```
 
 **In CommonJS:**
 ```javascript
-const { any, declareAny } = require('anytype-runtime');
-
-// Or if you installed the repository manually:
-const { any, declareAny } = require('./path/to/anytype-runtime/dist/anytype.cjs.js');
+import pkg from 'anytype-runtime';
+const { AnyType, any, declareAny } = pkg;
+// Or if you installed the repository manually
+import pkg from 'path/to/dist/anytype.cjs.js';
+const { AnyType, any, declareAny } = pkg;
 ```
 
 **In Browser (via CDN):**

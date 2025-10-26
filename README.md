@@ -14,6 +14,8 @@
 使用 API 设计
 - **零依赖** 
 纯 JavaScript 实现
+- **理论上高性能**
+这个看实际情况，我不敢说这是高性能
 
 ## 快速开始
 
@@ -50,18 +52,20 @@ npm run build
 
 **在 Node.js / ES Modules 中：**
 ```javascript
-import { any, declareAny } from 'anytype-runtime';
-
-// 或者如果你手动安装了仓库：
-import { any, declareAny } from './path/to/anytype-runtime/dist/anytype.esm.js';
+import pkg from 'anytype-runtime';
+const { AnyType, any, declareAny } = pkg;
+// 或者如果你手动安装了仓库
+import pkg from 'path/to/dist/anytype.esm.js';
+const { AnyType, any, declareAny } = pkg;
 ```
 
 **在 CommonJS 中：**
 ```javascript
-const { any, declareAny } = require('anytype-runtime');
-
-// 或者如果你手动安装了仓库：
-const { any, declareAny } = require('./path/to/anytype-runtime/dist/anytype.cjs.js');
+import pkg from 'anytype-runtime';
+const { AnyType, any, declareAny } = pkg;
+// 或者如果你手动安装了仓库
+import pkg from 'path/to/dist/anytype.cjs.js';
+const { AnyType, any, declareAny } = pkg;
 ```
 
 **在浏览器中（通过 CDN）：**
