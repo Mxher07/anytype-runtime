@@ -19,7 +19,10 @@ Pure JavaScript implementation
 
 ### Installation
 
-Since the package is not yet officially published to npm, you can install it using the following methods:
+**Install from npm （Node environment recommended）**
+```bash
+npm install anytype-runtime
+```
 
 **Install from GitHub (recommended for development):**
 ```bash

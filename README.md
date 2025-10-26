@@ -19,8 +19,10 @@
 
 ### 安装
 
-由于该库尚未正式发布到 npm，你可以通过以下方式安装：
-
+** 从 npm 安装 （Node环境推荐）**
+```bash
+npm install anytype-runtime
+```
 **从 GitHub 安装（推荐用于开发）：**
 ```bash
 npm install github:Mxher07/anytype-runtime

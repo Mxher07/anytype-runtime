@@ -126,6 +126,8 @@ export function declareAny(variables) {
   return result;
 }
 
+export { AnyType };
+
 // Default Export
 export default {
   AnyType,
