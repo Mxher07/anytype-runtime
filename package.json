@@ -1,5 +1,5 @@
 {
-  "name": "FlexType",
+  "name": "flextypeonjs",
   "version": "1.0.0",
   "description": "A JavaScript type inference and automatic conversion library",
   "main": "dist/flextype.cjs.js",
@@ -14,8 +14,7 @@
   "unpkg": "dist/flextype.umd.js",
   "files": [
     "dist",
-    "README.md",
-    "README_EN.md"
+    "README.md"
   ],
   "repository": {
     "type": "git",
