@@ -7,18 +7,18 @@ export default {
   input: 'src/index.js',
   output: [
     {
-      file: 'dist/anytype.esm.js',
+      file: 'dist/flextype.esm.js',
       format: 'esm'
     },
     {
-      file: 'dist/anytype.cjs.js',
+      file: 'dist/flextype.cjs.js',
       format: 'cjs',
       exports: 'auto'
     },
     {
-      file: 'dist/anytype.umd.js',
+      file: 'dist/flextype.umd.js',
       format: 'umd',
-      name: 'AnyTypeRuntime'
+      name: 'FlexTypeRuntime'
     }
   ],
   plugins: [
